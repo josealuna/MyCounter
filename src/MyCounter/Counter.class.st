@@ -26,3 +26,21 @@ Counter >> count: number [
 
 	count := number
 ]
+
+{ #category : 'accessing' }
+Counter >> increment [
+	"comment stating purpose of instance-side method"
+	"scope: class-variables  &  instance-variables"
+
+	count := count + 1.
+	^ self
+]
+
+{ #category : 'initialization' }
+Counter >> initialize [ 
+
+	"comment stating purpose of instance-side method"
+	"scope: class-variables  &  instance-variables"
+	super initialize.
+	count := 0
+]
