@@ -28,6 +28,15 @@ Counter >> count: number [
 ]
 
 { #category : 'accessing' }
+Counter >> decrement [
+	"comment stating purpose of instance-side method"
+	"scope: class-variables  &  instance-variables"
+
+	count := count - 1.
+	^ self
+]
+
+{ #category : 'accessing' }
 Counter >> increment [
 	"comment stating purpose of instance-side method"
 	"scope: class-variables  &  instance-variables"
