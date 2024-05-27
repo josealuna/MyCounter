@@ -45,6 +45,11 @@ Counter >> increment [
 	^ self
 ]
 
+{ #category : 'actions' }
+Counter >> incrementBy: anInteger [ 
+	self count: count + anInteger 
+]
+
 { #category : 'initialization' }
 Counter >> initialize [ 
 
